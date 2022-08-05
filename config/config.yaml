@@ -1,0 +1,36 @@
+#系统配置
+sys:
+  port: 8888
+  host: 8.142.189.85
+  start-time: "2022-06-28"
+  machine-id: 1
+  file-save-path: "./resource/video/"
+  cover-save-path: "./resource/cover/"
+
+# jwt
+auth:
+  jwt-secret: "douyin-mini"
+#数据库配置
+mysql:
+  host: 8.142.189.85
+  port: 3306
+  model: "dev"
+  db-name: "douyin"
+  username: "root"
+  password: "123456"
+  max-idle-conns: 10
+  max-open-conns: 100
+redis:
+  addr: 8.142.189.85:6379
+  port: 6379
+  password: ""
+#日志配置
+log:
+  level: "info"
+  filename: "douyin.log"
+  prex: '[douyin-mini:]'
+  max_size: 200
+  max_age: 30
+  max_backups: 7
+  path: ./log/
+
